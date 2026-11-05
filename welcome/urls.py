@@ -21,5 +21,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('hello/', views.hello, name='hello')
+    path('hello/', views.hello, name='hello'),
+    path('archive/<int:year>',views.archive_view, name='archive_view' ),
 ]
