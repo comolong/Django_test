@@ -14,3 +14,7 @@ def vendor_index(request):
     vendor_list = Vendor.objects.all()
     context = {"Vendor_list":vendor_list}
     return render(request, 'vendor_test.html', context)
+
+def block_test(request):
+    context = {"Vendor_list":Vendor.objects.all()}
+    return render(request, "vendor_block.html", context)

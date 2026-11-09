@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}店家清單{% endblock  %}
+
+{% block content %}
+{% for vendor in Vendor_list %}
+<h1>{{vendor.vendor_name}}</h1>
+<ul>
+    <li>{{vendor.store_name}}</li>
+    <li>{{vendor.phone_number}}</li>
+    <li>{{vendor.address}}</li>
+</ul>
+{% endfor %}
+{% endblock content %}
