@@ -24,4 +24,5 @@ urlpatterns = [
     path('food/<int:food_id>',views.food_list, name='food_list' ),
     path('vendor/', views.vendor_index, name='vendor_index'),
     path('block/', views.block_test, name='vendor_block_test'),
+    path('create/', views.vendor_create_view, name='vendor_create'),
 ]
